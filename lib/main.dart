@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meghaduta/Screens/login.dart';
-import 'package:meghaduta/Screens/register.dart';
-import 'package:meghaduta/Screens/welcome.dart';
 
-import 'Screens/chat.dart';
+import 'pages/conversationPageList.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,17 +12,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: WelcomeScreen.id,
-      routes: {
-        WelcomeScreen.id: (context) => WelcomeScreen(),
-        Login.id: (context) => Login(),
-        Register.id: (context) => Register(),
-        Chat.id: (context) => Chat(),
-      },
+      home: ConversationPageList(),
+//      initialRoute: WelcomeScreen.id,
+//      routes: {
+//        WelcomeScreen.id: (context) => WelcomeScreen(),
+//        Login.id: (context) => Login(),
+//        Register.id: (context) => Register(),
+//        Chat.id: (context) => Chat(),
+//      },
     );
   }
 }
