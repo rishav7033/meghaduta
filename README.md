@@ -37,8 +37,8 @@ Part 2: Setting Up CI(Continuous Integration).
         #STEPS:
         i) Registering for Travis CI
         ii)to be continued......
-Part 3: Now We create the chatscreen.
-       for this we are creating 3 directories
+Part #3: Now We create the chatscreen.
+       #for this we are creating 3 directories
        1)config=> This will have all our assets, like colors and images, we can say as resource Directory.
        2)pages=> This will contain 2 files, one 'll be the each chat page and other will be the to scroll among different chats.
        3)widgets=> This ll contain all the parts of conversationPage.(This one is the main meat directory.)
